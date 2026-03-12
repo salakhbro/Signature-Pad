@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #4b00ff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  padding: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+.signature-pad-form {
+  width: 30rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signature-pad {
+  cursor: crosshair;
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 4px;
+}
+
+.submit-button,
+.clear-button {
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+@media (pointer: coarse) {
+  body {
+    overflow: hidden;
+    /* Needed to prevent the vertical scroll on touch devices */
+  }
+}
